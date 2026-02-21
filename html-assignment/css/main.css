@@ -1,0 +1,38 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: palevioletred
+}
+
+.site-title{
+    color: silver;
+}
+
+#my-image{
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+ul li{
+    list-style-type: square;
+}
+
+ul :nth-child(1){
+    background-color: lightgrey;
+}
+
+/* LVHA  */
+a:link{
+    text-decoration: none;
+    background-color: silver;
+    border: 2px dotted;
+}
+a:visited{
+    color: whitesmoke;
+}
+a:hover{
+    color: black;
+    background-color: palevioletred;
+}
