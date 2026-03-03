@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm - Dolphins</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!---this is the image link https://www.pexels.com/photo/3439578/-->
+</head>
+<body>
+    <!--div creates the light blue wrap around body content-->
+  <div class="wrapper">
+    <!--gives class to image and heading to link in the css file to be formatted-->
+    <header class="site-header">
+        <img src="images/dolphin.jpg" alt="image of dolphin" class="header-image">
+        <h1 id="home" class="site-title">Dolphins</h1>
+    </header>
+    <!--top site navigation bar-->
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!--main article tag used to format the image and text wrap-->
+    <article>
+        <h2 id="story">The World of Dolphins</h2>
+        <div class="clearfix">
+            <img src="images/dolphin.jpg" alt="image of dolphin" width="200" height="130">
+            <p>Dolphins are a very socially active and highly intelligent marine mammal known for their playful demeanor. They use a variety of clicks, whistles, and body movements to communicate; this is a very complex network of sounds but can be as specific as having individual names for each other. Dolphins breathe air, give birth to live calf, and produce milk which is why they are mammals. One of the more popular species is the Bottlenose Dolphin which is usually recognized for having a curved smile. This is also the species most often seen in aquariums, for public entertainment, and dolphin pools, where humans can swim with them. Dolphins are a cooperative animal; they use their intelligence to work together in the wild to hunt prey and protect each other when being hunted. This collaborative nature also comes into play with training for human interaction. Marine scientists and the public have always had a strong fascination with dolphins, and if we work to protect them from extinction, they will be enjoyed for many years to come.</p>
+        </div>
+    </article>
+    <h2>Fun Facts</h2>
+    <ul>
+        <li>Dolphins use echolocation to analyze sounds around them to determine what objects they are near.</li>
+        <li>Only half of a dolphin's brain shuts down to sleep, while the other half stays alert.</li>
+        <li>While swimming, dolphins can reach speeds of roughly 30-50 km per hour.</li>
+        <li>Dolphins can have anywhere from 2 to 250 teeth, depending on the species.</li>
+    </ul>
+        <!--creates class of the form to use in css file to specify the formatting-->
+        <form class="form-container" action="index.html" method="get">
+            <section id="contact">
+                <!--creates laebls and text boxes you are able to write in-->
+             <h2>Contact to Learn More</h2>
+                <div>
+                    <label for="fullname">Your Name</label>
+                    <input id="fullname" type="text">
+                </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input id="email" type="email">
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+            </section>
+            <div>
+                <!--radio buttons for question-->
+                <h3>Would you be interested in swimming with dolphins?</h3>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="dolphins" value="yes">
+                
+                <label for="no">No</label>
+                <input type="radio" id="no" name="dolphins" value="no">
+                
+                <label for="information">Waiting for more information</label>
+                <input type="radio" id="information" name="dolphins" value="information">
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    <footer>
+        <p>Copyright &copy; Dolphins 2026</p>
+    </footer>
+  </div>
+</body>
+</html>

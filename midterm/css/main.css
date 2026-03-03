@@ -1,0 +1,119 @@
+body{
+    background-color: #0f6f79;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* sets the dimensions and colour of body wrapper{} */
+.wrapper{
+    width: 900px;
+    background-color: #d1f2f5;
+    margin: auto;
+}
+
+/* sets the image as a header in the centre of site with a specific height and width{} */
+.site-header{
+    position: relative;
+    width: 100%;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.header-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* sets position and font style for title{} */
+.site-title{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    font-size: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* LVHA{} */
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    background-color: #0f6f79;
+}
+
+/* drops the unordered list below the image and paragraph{} */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* gives space between image and body wrapper{} */
+article img{
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+nav{
+    position: relative;
+}
+
+/* formats navigation bar in centre with seperating borders{} */
+nav li{
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid gray;
+    width: 30%;
+}
+
+/* takes ending border off nav bar{} */
+nav li:last-child{
+    border-right: none;
+}
+
+form section h2{
+    margin-top: 5px;
+}
+
+/* formats layout for just the form text boxes, not buttons{} */
+section label{
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+/* lengths text boxes in form{} */
+section input{
+    width: 100%;
+}
+
+/* makes the message box stay within the form box/border{} */
+textarea{
+    max-width: 850px;
+}
+
+/* creates the box/border around form{} */
+.form-container{
+    width: 100%;
+    max-width: 850px;
+    padding: 20px;
+    margin-left: 4px;
+    border: 1px solid gray;
+}
+
+/* puts space between send button and radio buttons{} */
+div button{
+    margin-top: 6px;
+}
+
+/* puts space above and under the copyright line{} */
+footer{
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
