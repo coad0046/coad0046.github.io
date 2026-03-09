@@ -47,6 +47,15 @@ a:hover{
     background-color: #0f6f79;
 }
 
+h2{
+    margin-left: 10px;
+}
+
+article p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* drops the unordered list below the image and paragraph{} */
 .clearfix::after{
     content: '';
@@ -117,4 +126,5 @@ div button{
 footer{
     padding-bottom: 10px;
     padding-top: 5px;
+    margin-left: 10px;
 }
