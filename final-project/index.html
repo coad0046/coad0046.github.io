@@ -4,189 +4,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--imports Font Awesome to use search and button icons-->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Three Star Media</title>
     <!--browser tab title-->
 </head>
 <body>
-    <div>
-        <img src="images/logo.png" alt="Logo">
-        <!--displays logo image-->
-    </div>
-    <!--Navigation Bar-->
-    <div class="navbar">
-        <nav class="nav">
-            <!--semantic tag for navigation links-->
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Team</a>
-            <a href="#">Contact</a>
-            <!--anchor tag for clickable links-->
-        </nav>
-        <form action="index.html" method="get" class="search-box">
-            <input id="search" type="search" placeholder="Search">  
-            <!--search field; type=search is designed for search functionality-->
-            <i class="fa fa-search"></i>
-            <!--Font Awesome for search icon and css class to later format it in css--> 
-        </form>    
-    </div>
-    <!--Main Heading-->
-    <div class="mainheading">
-        <!--section for banner image and content-->
-        <img src="images/main-banner.jpg" alt="main image">
-        <h1>Welcome to Three Star Media</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel praesentium, ab, labore quae neque veniam dignissimos ipsum eius nulla doloribus, a eos? Nisi mollitia, a minus iste similique nemo!</p>
-        <form action="index.html" method="get">
-            <!--form used to wrap button for later use of navigation-->
-            <button class="connectbtn">Connect with us <i class="fa-solid fa-caret-right"></i></button>
-            <!--i element and class put within the button tag to add arrow inside of button box; repeated throughout this html-->
-        </form>
-    </div>
-    <!--About Us-->
-    <div class="aboutus">
-        <!--container grouping about us content-->
-        <img src="images/about-us.jpg" alt="about us">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt temporibus reiciendis exercitationem omnis labore eum consequuntur nesciunt quisquam dolores officia, nemo ducimus fugit, facilis doloribus ullam iste. Fuga, deleniti tempora!</p>
-    </div>
-    <!--Our Services-->
-    <div class="section">
-        <h2>Our Services</h2>
-        <div class="services">
-        <!--used to group multiple service items that are all within their own section-->
-        <!--each service is in its own section for easy structure changes in css, all with consistant structure-->
-            <div class="digital">
-                <img src="images/digital.jpg" alt="digital transformation">
-                <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magni accusantium quas, velit facere a id voluptas, nam eius illum consectetur ad sequi delectus pariatur doloremque nostrum enim, vel qui.</p>
+    <div class="container">     
+        <!--Navigation Bar-->
+        <header class="navbar">
+            <nav class="nav">
+                <div class="logoimg">
+                    <img src="images/logo.png" alt="Logo">
+                    <!--displays logo image-->
+                </div>
+                <!--semantic tag for navigation links-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--anchor tag for clickable links-->
+                <form action="index.html" method="get" class="search-box">
+                    <input id="search" type="text" placeholder="Search">  
+                    <!--search field; type=search is designed for search functionality-->
+                    <button type="submit" aria-label="Search">
+                        <i class="fa fa-search" id="icon"></i>
+                        <!--Font Awesome for search icon and css class to later format it in css-->
+                    </button>
+                </form>    
+            </nav>
+        </header>
+        <main>
+            <div class="mainheading">
+                <!--section for banner image and content-->
+                <img src="images/main-banner.jpg" alt="main image">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel praesentium, ab, labore quae neque veniam dignissimos ipsum eius nulla doloribus, a eos? Nisi mollitia, a minus iste similique nemo!</p>
                 <form action="index.html" method="get">
-                    <button class="digitalbtn">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+                    <!--form used to wrap button for later use of navigation-->
+                    <button class="connectbtn"><a href="#contact">Connect with us <i class="fa-solid fa-caret-right"></i></a></button>
+                    <!--i element and class put within the button tag to add arrow inside of button box; repeated throughout this html-->
                 </form>
             </div>
-            <div class="marketing">
-                <img src="images/marketing.jpg" alt="marketing">
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident minus itaque molestias dolore aperiam impedit consequatur, qui soluta quibusdam vitae. Dolorem sint itaque autem! Debitis eius facilis cupiditate soluta.</p>
+            <!--About Us-->
+            <section class="aboutus" id="aboutus">
+                <!--container grouping about us content-->
+                <img src="images/about-us.jpg" alt="about us">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt temporibus reiciendis exercitationem omnis labore eum consequuntur nesciunt quisquam dolores officia, nemo ducimus fugit, facilis doloribus ullam iste. Fuga, deleniti tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium voluptatibus modi a nulla consectetur voluptatum, corrupti repellendus, molestias exercitationem, quo excepturi saepe iure dolore nam ex. Aut, in nulla?</p>
+            </section>
+            <!--Our Services-->
+            <section class="services-section">
+                <h2>Our Services</h2>
+                <div class="services" id="services">
+                <!--used to group multiple service items that are all within their own section-->
+                <!--each service is in its own section for easy structure changes in css, all with consistant structure-->
+                    <div class="digital">
+                        <img src="images/digital.jpg" alt="digital transformation">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magni accusantium quas, velit facere a id voluptas, nam eius illum consectetur ad sequi delectus pariatur doloremque nostrum enim, vel qui.</p>
+                        <form action="index.html" method="get">
+                            <button class="digitalbtn">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="marketing">
+                        <img src="images/marketing.jpg" alt="marketing">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident minus itaque molestias dolore aperiam impedit consequatur, qui soluta quibusdam vitae. Dolorem sint itaque autem! Debitis eius facilis cupiditate soluta.</p>
+                        <form action="index.html" method="get">
+                            <button class="marketingbtn">Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="video">
+                        <img src="images/video.jpg" alt="video production">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus veniam autem vel nobis, molestiae ipsam. At totam magnam ad, magni facere et error! Esse sit et, aliquid culpa quae sed?</p>
+                        <form action="index.html" method="get">
+                            <button class="videobtn">Video Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="development">
+                        <img src="images/web.jpg" alt="web development">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aliquid, optio expedita est provident corporis veniam asperiores esse illum enim quae quo, ipsa neque exercitationem sapiente itaque, nobis vitae vel?</p>
+                        <form action="index.html" method="get">
+                            <button class="webbtn">Web Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="print">
+                        <img src="images/print.jpg" alt="print">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, quidem explicabo iste repellendus adipisci vero autem velit sunt sequi. Ipsum, sequi et? Dolorum, culpa facilis molestiae laudantium quasi exercitationem saepe.</p>
+                        <form action="index.html" method="get">
+                            <button class="printbtn">Print Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--Vision Section-->
+            <div class="vision">
+                <img src="images/vision.jpg" alt="our vision">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aperiam odit, eos vitae aliquid recusandae nihil? Nihil perspiciatis, minima modi odit nobis laudantium repudiandae facere esse, dolorum quidem facilis quisquam.</p>
                 <form action="index.html" method="get">
-                    <button class="marketingbtn">Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
+                    <button class="learnbtn">Learn More<i class="fa-solid fa-caret-right"></i></button>
+                    <!--each button has btn at the end of their class for structure use in css-->
                 </form>
             </div>
-            <div class="video">
-                <img src="images/video.jpg" alt="video production">
-                <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus veniam autem vel nobis, molestiae ipsam. At totam magnam ad, magni facere et error! Esse sit et, aliquid culpa quae sed?</p>
-                <form action="index.html" method="get">
-                    <button class="videobtn">Video Plans<i class="fa-solid fa-caret-right"></i></button>
-                </form>
-            </div>
-            <div class="development">
-                <img src="images/web.jpg" alt="web development">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aliquid, optio expedita est provident corporis veniam asperiores esse illum enim quae quo, ipsa neque exercitationem sapiente itaque, nobis vitae vel?</p>
-                <form action="index.html" method="get">
-                    <button class="webbtn">Web Plans<i class="fa-solid fa-caret-right"></i></button>
-                </form>
-            </div>
-            <div class="print">
-                <img src="images/print.jpg" alt="print">
-                <h3>Print</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, quidem explicabo iste repellendus adipisci vero autem velit sunt sequi. Ipsum, sequi et? Dolorum, culpa facilis molestiae laudantium quasi exercitationem saepe.</p>
-                <form action="index.html" method="get">
-                    <button class="printbtn">Print Plans<i class="fa-solid fa-caret-right"></i></button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--Vision Section-->
-    <div class="vision">
-        <img src="images/vision.jpg" alt="our vision">
-        <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aperiam odit, eos vitae aliquid recusandae nihil? Nihil perspiciatis, minima modi odit nobis laudantium repudiandae facere esse, dolorum quidem facilis quisquam.</p>
-        <form action="index.html" method="get">
-            <button class="learnbtn">Learn More<i class="fa-solid fa-caret-right"></i></button>
-            <!--each button has btn at the end of their class for structure use in css-->
-        </form>
-    </div>
-    <!--Team Members-->
-    <div class="team">
-        <h2>Our Team</h2>
-        <div class="john">
-            <img src="images/john.jpg" alt="John Doe">
-            <h3>John Doe</h3>
-            <h4>CEO and Co-owner</h4>
-            <hr>
-            <!--horizontal ruler for visual line on page ad to seperate content-->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ut, earum aspernatur vero reprehenderit dignissimos cupiditate magnam ex eius praesentium debitis expedita numquam nemo nam libero quia hic modi neque!</p>
-        </div>
-        <div class="bob">
-            <img src="images/bob.jpg" alt="Bob Rite">
-            <h3>Bob Rite</h3>
-            <h4>CFO and Co-owner</h4>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat laudantium earum nobis, quis atque. Similique id excepturi dolores, nulla perferendis quasi quia officia iste vel, tempore quibusdam! Pariatur, iusto.</p>
-        </div>
-    </div>
-    <!--Contact Section-->
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <h3>Send us a message</h3>
-        <form action="index.html" method="post" class="contactform">
-        <!--form with post method for sending user data-->
-            <label for="fullname">Full Name</label>
-            <input type="text" name="fullname" id="fullname">
+            <!--Team Members-->
+            <section class="team" id="team">
+                <h2>Our Team</h2>
+                <div class="team-member">
+                    <div class="john">
+                        <img src="images/john.jpg" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <hr>
+                        <!--horizontal ruler for visual line on page ad to seperate content-->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ut, earum aspernatur vero reprehenderit dignissimos cupiditate magnam ex eius praesentium debitis expedita numquam nemo nam libero quia hic modi neque!</p>
+                    </div>
+                    <div class="bob">
+                        <img src="images/bob.jpg" alt="Bob Rite">
+                        <h3>Bob Rite</h3>
+                     <h4>CFO and Co-owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat laudantium earum nobis, quis atque. Similique id excepturi dolores, nulla perferendis quasi quia officia iste vel, tempore quibusdam! Pariatur, iusto.</p>
+                    </div>
+                </div>
+            </section>
+            <!--Contact Section-->
+            <section class="contact" id="contact">
+                <h2>Contact Us</h2>
+                <h3>Send us a message</h3>
+                <form action="index.html" method="post" class="contactform">
+                <!--form with post method for sending user data-->
+                    <label for="fullname" class="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname">
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <!--type=email allows the @ sign in format-->
+                    <label for="email" class="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <!--type=email allows the @ sign in format-->
 
-            <label for="message">Message</label>
-            <input type="text" id="message">
+                    <label for="message" class="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
 
-            <button type="submit">Send</button>
-            <!--submit button sends form data-->
-        </form>
-    </div>
-    <!--Table Section-->
-    <table>
-        <!--used to display strcuture data into a table format-->
-        <caption>Hours of operation</caption>
-        <thead>
-        <!--table header section-->
-            <tr>
-            <!--tr (table row) creates the row and th (table heading) is the headings in that row-->
-                <th>Days</th>
-                <th>Hours</th>
-            </tr>
-        </thead>
-        <tbody>
-        <!--table body for information portion-->
-            <tr>
-            <!--table row for the next row with td (tabel data cell) elements to differentiate the headings from that data cell-->
-                <td>Monday - Friday</td>
-                <td>9 AM - 6PM</td>
-            </tr>
-            <tr>
-                <td>Saturday - Sunday</td>
-                <td>Closed</td>
-            </tr>
-        </tbody>
-    </table>
-    <!--Location Section-->
-    <div class="location">
-        <h3>Location</h3>
-        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208549.36856157312!2d-76.05223638802067!3d45.38150370593784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1775839286374!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-        <!--embeds google map into the page; iframe is used to embed external interactive elements-->
-    </div>
-    <!--Footer Section-->
-    <div class="footer">
+                    <button type="submit">Send</button>
+                    <!--submit button sends form data-->
+                </form>
+                <!--Hours Table Section-->
+                <div class="hours">
+                    <table>
+                        <!--used to display strcuture data into a table format-->
+                        <caption>Hours of operation</caption>
+                        <thead>
+                        <!--table header section-->
+                            <tr>
+                            <!--tr (table row) creates the row and th (table heading) is the headings in that row-->
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!--table body for information portion-->
+                            <tr>
+                            <!--table row for the next row with td (tabel data cell) elements to differentiate the headings from that data cell-->
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Location Section-->
+                <div class="location">
+                    <h3>Location</h3>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208549.36856157312!2d-76.05223638802067!3d45.38150370593784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1775839286374!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                    <!--embeds google map into the page; iframe is used to embed external interactive elements-->
+                </div>
+            </section>
+        </main>
+        <!--Footer Section-->
         <footer>
             <p>&copy; Copyright Three Star Media, 2020</p>
             <!--&copy; displays the copyright symbol-->
             <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
             <!--added an anchor tag to link the unspladh website on page, target=_blank will opent the page in a new tab-->
         </footer>
+        
     </div>
 </body>
 </html>
