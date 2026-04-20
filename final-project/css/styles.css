@@ -7,7 +7,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* dark background behing logo and navigation */
+/* HEADER AND NAVIGATION */
+
+/* dark background behind logo and navigation */
 header{
     background-color: #222;
     padding: 1rem 0;
@@ -20,6 +22,7 @@ header{
     border: #222 solid 10px;
 }
 
+/* setting padding 0 for top/bottom and 0.6 for left/right then changing bottom to 1rem */
 .nav{
     padding: 0rem 0.6rem;
     padding-bottom: 1rem;
@@ -35,6 +38,7 @@ header{
     list-style: none;
 }
 
+/* makes links full width, text in dark yellow, not underlined and centered */
 .nav ul li a{
     display: block;
     color: #c78c06;
@@ -45,22 +49,28 @@ header{
     width: 100%;
 }
 
+/* reverses the colours when links are hovered over */
 .nav ul li a:hover{
     background-color: #c78c06;
     color: #222;
 }
 
+/* SEARCH BAR */
+
+/* sets flex display for search input and button */
 .search-box{
     display: flex;
     width: 100%;
 }
 
+/* gets search bar to take up available width in the container and sets input height */
 .search-box input{
     flex-grow: 1;
     padding: 0 6px;
     height: 2rem;
 }
 
+/* sets the colouring and size of the magnifying search button  */
 .search-box button{
     color: #c78c06;
     background-color: #222;
@@ -69,6 +79,9 @@ header{
     padding: 6px;
 }
 
+/* MAIN HEADING */
+
+/* adds the image for the main heading background, cover adjusts the image without distorting it and fills container */
 .mainheading{
     background: url(../images/main-banner.jpg);
     background-size: cover;
@@ -77,6 +90,7 @@ header{
     padding: 3rem 0;
 }
 
+/* main heading text sizing with dark overlay background for readability */
 .mainheading h1{
     color: white;
     background-color: rgba(34, 34, 34, 0.7);
@@ -85,6 +99,7 @@ header{
     padding-left: 1rem;
 }
 
+/* paragraph under heading */
 .mainheading p{
     color: white;
     background-color: rgba(34, 34, 34, 0.7);
@@ -94,6 +109,7 @@ header{
     padding-bottom: 0.8rem;
 }
 
+/* connect with us button colour and sizing with no underlined link */
 .connectbtn{
     margin-left: 1rem;
     background-color: #c78c06;
@@ -104,40 +120,50 @@ header{
     font-size: 1.2rem;
 }
 
+/* overlay background for button */
 .mainheading form{
     margin-top: 2rem;
     height: 6rem;
     background-color: rgba(34, 34, 34, 0.7);
 }
 
+/* ABOUT US SECTION */
+
 .aboutus{
     background-color: #ffe6ac;
 }
 
+/* full width image on mobile */
 .aboutus img{
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
 }
 
+/* about us heading style */
 .aboutus h2{
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
     margin-left: 1rem;
 }
 
+/* about us paragraph style */
 .aboutus p{
     margin-left: 1rem;
     padding-bottom: 1rem;
     font-size: 1rem;
 }
 
+/* SERVICES SECTION */
+
+/* our services heading style */
 .services-section h2{
     font-size: 2.4rem;
     padding: 1rem;
     margin-top: 1rem;
 }
 
+/* background colour and sizing for each service card */
 .services div{
     background-color: #ffe6ac;
     margin-bottom: 10px;
@@ -145,27 +171,32 @@ header{
     margin: 10px;
 }
 
+/* spacing for each service card image */
 .services div img{
     width: 100%;
     padding-bottom: 1.5rem;
 }
 
+/* service card heading size */
 .services div h3{
     font-size: 1.6rem;
     padding-bottom: 1rem;
     margin-left: 1rem;
 }
 
+/* description text size */
 .services div p{
     font-size: 1rem;
     padding-bottom: 1rem;
     margin-left: 1rem;
 }
 
+/* service card buttons left indent */
 .services div form{
     margin-left: 1rem;
 }
 
+/* button link colours, removes underline */
 .services div form button{
     background-color: #222;
     color: white;
@@ -175,12 +206,16 @@ header{
     justify-content: center;
 }
 
+/* arrow icon size and spacing */
 .fa-solid.fa-caret-right{
     margin-left: 0.75rem;
     font-size: 1.75rem;
     justify-content: center;
 }
 
+/* VISION SECTION */
+
+/* adds vision image as background for text with full width of container */
 .vision{
     background: url(../images/vision.jpg);
     background-size: cover;
@@ -189,6 +224,7 @@ header{
     padding-top: 2rem
 }
 
+/* vision heading size, spacing, and colour */
 .vision h3{
     font-size: 1.6rem;
     color: white;
@@ -196,6 +232,7 @@ header{
     margin-left: 1rem;
 }
 
+/* vision paragraph */
 .vision p{
     font-size: 1rem;
     color: white;
@@ -203,6 +240,7 @@ header{
     margin-left: 1rem;
 }
 
+/* learn more button and text colour with border, button size and removes underline */
 .vision form button{
     background-color: #222;
     color:white;
@@ -215,40 +253,49 @@ header{
     margin-bottom: 1rem;
 }
 
+/* TEAM MEMBER SECTION */
+
+/* sets fles display for team members */
 .team{
     display: flex;
     flex-direction: column;
     margin: 1rem;
 }
 
+/* team section's main heading size and space */
 .team h2{
     font-size: 2.4rem;
     padding-top: 1rem;
     padding-bottom: 0.75rem
 }
 
+/* team member background colour */
 .team div{
     background-color: #ffe6ac;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
+/* team members full size image to fit container */
 .team div div img{
     width: 100%;
     padding-bottom: 0.5rem;
 }
 
+/* members name */
 .team div h3{
     font-size: 1.6rem;
     margin-left: 1rem;
     padding-bottom: 0.1rem;
 }
 
+/* members role */
 .team div h4{
     font-size: 1rem;
     margin-left: 1rem
 }
 
+/* horizontal ruler colour and size */
 .team div hr{
     display: flex;
     margin-left: 1rem;
@@ -256,36 +303,45 @@ header{
     border-bottom: solid #c78c06 2px;
 }
 
+/* bio filler text size and space */
 .team div p{
     font-size: 1rem;
     margin-top: 1rem;
     margin-left: 1rem;
 }
 
+/* CONTACT METHODS SECTION */
+
+/* contact us heading */
 .contact h2{
     font-size: 2.4rem;
     margin-left: 1rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
+
+/* send us a message heading */
 .contact h3{
     font-size: 1.6rem;
     margin-left: 1rem;
     padding-bottom: 1rem;
 }
 
+/* layout for contact form */
 .contact form{
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
 }
 
+/* contact form label size and spacing */
 .contact form label{
     font-size: 1rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
 }
 
+/* send button colours and size */
 .contact form button{
     font-size: 1.2rem;
     background-color: #222;
@@ -295,26 +351,29 @@ header{
     width: 50px;
 }
 
+/* hours of operation size and spacing  */
 .hours h3{
     font-size: 1.6rem;
     margin-left: 1rem;
     padding-bottom: 1rem;
 }
 
+/* hours table size and spacing within container */
 table{
     width: 98%;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
+/* header row background colour */
 table thead tr{
     background-color: #ffe6ac;
 }
 
+/* font size, border, and spacing for the four information cells (next two elements) */
 table th{
     font-size: 1rem;
     padding: 0.8rem;
-    text-align: center;
     border: solid #222 1px;
 }
 
@@ -324,16 +383,21 @@ table tbody td{
     border: solid #222 1px;
 }
 
+/* location heading */
 .location h3{
     font-size: 1.6rem;
     margin-left: 1rem;
 }
 
+/* google map size in container */
 .location p iframe{
     margin-left: 1rem;
     width: 98%;
 }
 
+/* FOOTER */
+
+/* footer size, colours, and spacing */
 footer{
     font-size: 1rem;
     background-color: #222;
@@ -346,24 +410,29 @@ footer p{
     padding-bottom: 1rem;
 }
 
+/* unsplash link colour */
 footer a{
     color:#c78c06;
 }
 
+/* media query applies styles when screen size is 760px wide and above */
 @media (min-width: 760px){
 
+    /* logo image spacing and background colour */
     .logoimg{
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         background-color: #222;
     }
 
+    /* flexbox for navigation bar, vertically canters items and evenly spaces them */
     .nav{
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
 
+    /* makes navigation list horizontal with flex direction */
     .nav ul{
         display: flex;
         flex-direction: row;
@@ -377,6 +446,7 @@ footer a{
         text-align: center;
     }
 
+    /* search box sizing and spacing */
     .search-box{
         padding-left: 2rem;
         justify-content: center;
@@ -384,6 +454,7 @@ footer a{
         align-items: center;
     }
 
+    /* width of inside the search box */
     .search-box form input{
         width: 10rem;
     }
@@ -396,6 +467,7 @@ footer a{
         font-size: 13px;
     }
 
+    /* flex display for about us section, puts photo and text in a row */
     .aboutus{
         display: flex;
         flex-direction: row;
@@ -411,10 +483,12 @@ footer a{
         font-size: 13px
     }
 
+    /* about us image size */
     .aboutus img{
         width: 400px;
     }
 
+    /* about us content container size */
     .aboutus-content{
         width: 500px;
     }
@@ -424,6 +498,7 @@ footer a{
         font-size: 2rem;
     }
 
+    /* sets grid display for service cards layout with 6 columns and 2 rows */
     .services{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -433,6 +508,7 @@ footer a{
         margin-right: 10%;
     }
 
+    /* services image fill with of container */
     .services img{
         height: auto;
         width: 100%;
@@ -446,6 +522,7 @@ footer a{
         font-size: 13px;
     }
 
+    /* button style for buttons inside each serive card */
     .services div form button{
         display: inline-block;
         font-size: 1rem;
@@ -454,16 +531,19 @@ footer a{
         align-items: center;
     }
 
+    /* first two service cards are in row one and span three columns each */
     .services div:nth-child(1), .services div:nth-child(2){
         grid-row: 1;
         grid-column: span 3;
     }
 
+    /* next three service cards are in row two and span two columns each */
     .services div:nth-child(3), .services div:nth-child(4), .services div:nth-child(5){
         grid-row: 2;
         grid-column: span 2;
     }
 
+    /* styles vision section all with a left margin and smaller font than mobile */
     .vision h3{
         margin-left: 11%;
         font-size: 1.5rem;
@@ -480,14 +560,21 @@ footer a{
         font-size: 1rem;
     }
 
+    /* team section container */
     .team{
         display: block;
         margin-left: 11%;
         margin-right: 11%;
     }
-    
+
+/* removes most of extra space under team photos */
+    .team div{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
     .team div div img{
-        padding: 0;
+        padding-bottom: 0;
     }
 
     .team h2{
@@ -507,6 +594,7 @@ footer a{
         text-align: left;
     }
 
+    /* layout for individual team members using grid layout */
     .john{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -517,6 +605,7 @@ footer a{
         grid-template-columns: 1fr 1fr;
     }
 
+    /* John image and text layout within the grid */
     .john-img{
         grid-column: 1 / 2;
     }
@@ -526,15 +615,19 @@ footer a{
         margin-right: 1rem;
     }
 
+    /* Bob image and text layout within the grid */
     .bob-img{
         grid-column: 2 / 3;
+        grid-row: 1;
     }
 
     .bob-text{
         grid-column: 1 / 2;
+        grid-row: 1;
         margin-right: 1rem;
     }
 
+    /* grid layout for contact section (contact form, hours table, and location */
     .contactinfo{
         margin-left: 11%;
         margin-right: 11%;
@@ -543,20 +636,24 @@ footer a{
         grid-template-rows: auto auto;
     }
     
+    /* contact us heading */
     .contact h2{
         font-size: 2rem;
         padding-bottom: 1.6rem;
     }
 
+    /* send us a message heading */
     .contact h3{
         font-size: 1.5rem;
         padding-bottom: 1rem;
     }
 
+    /* gives gap on right side of contact form so it doesn't touch the map */
     .contact{
         width: 96%;
     }
 
+    /* put contact form in the first column of grid */
     .contact form{
         grid-column: 1;
         width: 100%;
@@ -566,6 +663,7 @@ footer a{
         font-size: 13px
     }
 
+    /* sets a starting textarea size to message input */
     .contact form textarea{
         height: 90px;
     }
@@ -579,6 +677,7 @@ footer a{
         padding-bottom: 1rem;
     }
 
+    /* makes location section half the size of container */
     .location{
         width: 50%;
     }
@@ -587,11 +686,13 @@ footer a{
         font-size: 1.5rem;
     }
 
+    /* sets hours heading and table to the second row across both columns */
     .hours{
         grid-column: span 2;
         grid-row: span 2;
     }
 
+    /* puts location heading and map in the first row in column two */
     .location{
         grid-row: 1;
         grid-column: 2;
@@ -607,10 +708,13 @@ footer a{
         font-size: 13px;
     }
 
+    /* make footer font smaller */
     footer p{
         font-size: 13px;
         margin-left: 11%;
     }
+
+    /* sets a max screen width of 1200px for the media 760px styles */
 @media (min-width: 1200px){
     .container{
         max-width: 1200px;
