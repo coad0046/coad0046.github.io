@@ -1,99 +1,113 @@
+/* RESET: removes default browser settings */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-  color: #222;
-  background: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+/* sets default font with Open Sans */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+/* dark background behing logo and navigation */
+header{
+    background-color: #222;
+    padding: 1rem 0;
 }
 
+/* background colour for logo and border around it */
 .logoimg{
-    background-color: #c78c06;
-    padding: 15px;
+    background-color: #c78c06; 
+    padding: 1rem;
     border: #222 solid 10px;
 }
 
-.navbar {
-    background: #222;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.nav ul{
+.nav{
+    padding: 0rem 0.6rem;
+    padding-bottom: 1rem;
+    justify-content: center;
     width: 100%;
-    text-align: center;
 }
 
-.nav a{
-    color: #c78c06;
-    text-decoration: none;
-    padding: 15px;
+/* navigation list for mobile stack, vertical with no bullet points */
+.nav ul{
     display: block;
+    align-items: center;
+    margin: 0.6rem;
+    list-style: none;
 }
-.nav a:hover{
+
+.nav ul li a{
+    display: block;
+    color: #c78c06;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.nav ul li a:hover{
     background-color: #c78c06;
-    color:#222;
+    color: #222;
 }
 
 .search-box{
-    position: relative;
-    margin-top: 10px;
+    display: flex;
     width: 100%;
 }
 
 .search-box input{
-    padding: 8px 35px 8px 10px;
-    width: 100%;
+    flex-grow: 1;
+    padding: 0 6px;
+    height: 2rem;
 }
+
 .search-box button{
-    display: flex;
     color: #c78c06;
     background-color: #222;
     border: 1px solid #c78c06;
+    justify-content: center;
+    padding: 6px;
 }
 
 .mainheading{
-    position: relative;
-}
-
-.mainheading img{
+    background: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 550px;
-    object-fit: cover;
-}
-
-.mainheading h1, .mainheading p, .connectbtn{
-    position: absolute;
-    left: 20px;
-    color: white;
+    padding: 3rem 0;
 }
 
 .mainheading h1{
-    top: 60px;
-    font-size: 4rem;
+    color: white;
+    background-color: rgba(34, 34, 34, 0.7);
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
 }
 
 .mainheading p{
-    top: 220px;
+    color: white;
+    background-color: rgba(34, 34, 34, 0.7);
     font-size: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.8rem;
 }
 
 .connectbtn{
-    top: 300px;
-    background: #c78c06;
+    margin-left: 1rem;
+    background-color: #c78c06;
     border: none;
-    padding: 15px;
+    padding: 20px;
     color: #222;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.mainheading form{
+    margin-top: 2rem;
+    height: 6rem;
+    background-color: rgba(34, 34, 34, 0.7);
 }
 
 .aboutus{
@@ -107,10 +121,499 @@ body {
 }
 
 .aboutus h2{
-    margin-bottom: 10px;
-    padding-left: 15px;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
 }
 
 .aboutus p{
-    padding: 15px;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.services-section h2{
+    font-size: 2.4rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.services div{
+    background-color: #ffe6ac;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.services div img{
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.services div h3{
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.services div p{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.services div form{
+    margin-left: 1rem;
+}
+
+.services div form button{
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    justify-content: center;
+}
+
+.fa-solid.fa-caret-right{
+    margin-left: 0.75rem;
+    font-size: 1.75rem;
+    justify-content: center;
+}
+
+.vision{
+    background: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 2rem
+}
+
+.vision h3{
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.vision p{
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.vision form button{
+    background-color: #222;
+    color:white;
+    border: solid #c78c06 1px;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.team h2{
+    font-size: 2.4rem;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem
+}
+
+.team div{
+    background-color: #ffe6ac;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.team div div img{
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.team div h3{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+.team div h4{
+    font-size: 1rem;
+    margin-left: 1rem
+}
+
+.team div hr{
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: solid #c78c06 2px;
+}
+
+.team div p{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.contact h2{
+    font-size: 2.4rem;
+    margin-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.contact h3{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.contact form label{
+    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.contact form button{
+    font-size: 1.2rem;
+    background-color: #222;
+    color: #c78c06;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50px;
+}
+
+.hours h3{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+table{
+    width: 98%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+table thead tr{
+    background-color: #ffe6ac;
+}
+
+table th{
+    font-size: 1rem;
+    padding: 0.8rem;
+    text-align: center;
+    border: solid #222 1px;
+}
+
+table tbody td{
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: solid #222 1px;
+}
+
+.location h3{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.location p iframe{
+    margin-left: 1rem;
+    width: 98%;
+}
+
+footer{
+    font-size: 1rem;
+    background-color: #222;
+    color:#c78c06;
+    margin-left: 1rem;
+    padding-top: 1.5rem;
+}
+
+footer p{
+    padding-bottom: 1rem;
+}
+
+footer a{
+    color:#c78c06;
+}
+
+@media (min-width: 760px){
+
+    .logoimg{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: #222;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav ul li a{
+        display: block;
+        text-align: center;
+    }
+
+    .search-box{
+        padding-left: 2rem;
+        justify-content: center;
+        width: 10rem;
+        align-items: center;
+    }
+
+    .search-box form input{
+        width: 10rem;
+    }
+
+    .mainheading h1{
+        font-size: 3.75rem;
+    }
+
+    .mainheading p{
+        font-size: 13px;
+    }
+
+    .aboutus{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutus h2{
+        font-size: 2rem;
+    }
+
+    .aboutus p{
+        font-size: 13px
+    }
+
+    .aboutus img{
+        width: 400px;
+    }
+
+    .aboutus-content{
+        width: 500px;
+    }
+
+    .services-section h2{
+        margin-left: 10%;
+        font-size: 2rem;
+    }
+
+    .services{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .services img{
+        height: auto;
+        width: 100%;
+    }
+
+    .services div h3{
+        font-size: 1.5rem;
+    }
+
+    .services div p{
+        font-size: 13px;
+    }
+
+    .services div form button{
+        display: inline-block;
+        font-size: 1rem;
+        width: 94%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services div:nth-child(1), .services div:nth-child(2){
+        grid-row: 1;
+        grid-column: span 3;
+    }
+
+    .services div:nth-child(3), .services div:nth-child(4), .services div:nth-child(5){
+        grid-row: 2;
+        grid-column: span 2;
+    }
+
+    .vision h3{
+        margin-left: 11%;
+        font-size: 1.5rem;
+    }
+
+    .vision p{
+        margin-left: 11%;
+        margin-right: 11%;
+        font-size: 13px;
+    }
+
+    .vision form button{
+        margin-left: 11%;
+        font-size: 1rem;
+    }
+
+    .team{
+        display: block;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+    
+    .team div div img{
+        padding: 0;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+
+    .team-member div h3{
+        font-size: 1.5rem;
+    }
+
+    .team-member div h4{
+        font-size: 14px;
+    }
+
+    .team-member div p{
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .john{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bob{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .john-img{
+        grid-column: 1 / 2;
+    }
+
+    .john-text{
+        grid-column: 2 / 3;
+        margin-right: 1rem;
+    }
+
+    .bob-img{
+        grid-column: 2 / 3;
+    }
+
+    .bob-text{
+        grid-column: 1 / 2;
+        margin-right: 1rem;
+    }
+
+    .contactinfo{
+        margin-left: 11%;
+        margin-right: 11%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .contact h2{
+        font-size: 2rem;
+        padding-bottom: 1.6rem;
+    }
+
+    .contact h3{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .contact{
+        width: 96%;
+    }
+
+    .contact form{
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .contact form label{
+        font-size: 13px
+    }
+
+    .contact form textarea{
+        height: 90px;
+    }
+
+    .contact form button{
+        font-size: 16px;
+    }
+
+    .location h3{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .location{
+        width: 50%;
+    }
+
+    .hours h3{
+        font-size: 1.5rem;
+    }
+
+    .hours{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .location{
+        grid-row: 1;
+        grid-column: 2;
+        width: 100%;
+        margin-top: 100px
+    }
+
+    table thead th{
+        font-size: 13px;
+    }
+
+    table tbody td{
+        font-size: 13px;
+    }
+
+    footer p{
+        font-size: 13px;
+        margin-left: 11%;
+    }
+@media (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
 }

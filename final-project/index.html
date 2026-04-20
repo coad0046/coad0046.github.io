@@ -12,21 +12,31 @@
     <!--browser tab title-->
 </head>
 <body>
-    <div class="container">     
+    <div class="container">
         <!--Navigation Bar-->
         <header class="navbar">
             <nav class="nav">
                 <div class="logoimg">
                     <img src="images/logo.png" alt="Logo">
-                    <!--displays logo image-->
                 </div>
+            <!--displays logo image-->
                 <!--semantic tag for navigation links-->
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
                 <!--anchor tag for clickable links-->
                 <form action="index.html" method="get" class="search-box">
@@ -42,22 +52,23 @@
         <main>
             <div class="mainheading">
                 <!--section for banner image and content-->
-                <img src="images/main-banner.jpg" alt="main image">
                 <h1>Welcome to Three Star Media</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel praesentium, ab, labore quae neque veniam dignissimos ipsum eius nulla doloribus, a eos? Nisi mollitia, a minus iste similique nemo!</p>
-                <form action="index.html" method="get">
-                    <!--form used to wrap button for later use of navigation-->
-                    <button class="connectbtn"><a href="#contact">Connect with us <i class="fa-solid fa-caret-right"></i></a></button>
-                    <!--i element and class put within the button tag to add arrow inside of button box; repeated throughout this html-->
-                </form>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel praesentium, ab, labore quae neque veniam dignissimos ipsum eius nulla doloribus, a eos? Nisi mollitia, a minus iste similique nemo!
+                    <form action="index.html" method="get">
+                        <!--form used to wrap button for later use of navigation-->
+                        <a href="#contact" class="connectbtn">Connect with us <i class="fa-solid fa-caret-right"></i></a>
+                        <!--i element and class put within the button tag to add arrow inside of button box; repeated throughout this html-->
+                    </form>
             </div>
             <!--About Us-->
             <section class="aboutus" id="aboutus">
                 <!--container grouping about us content-->
                 <img src="images/about-us.jpg" alt="about us">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt temporibus reiciendis exercitationem omnis labore eum consequuntur nesciunt quisquam dolores officia, nemo ducimus fugit, facilis doloribus ullam iste. Fuga, deleniti tempora!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium voluptatibus modi a nulla consectetur voluptatum, corrupti repellendus, molestias exercitationem, quo excepturi saepe iure dolore nam ex. Aut, in nulla?</p>
+                <div class="aboutus-content">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt temporibus reiciendis exercitationem omnis labore eum consequuntur nesciunt quisquam dolores officia, nemo ducimus fugit, facilis doloribus ullam iste. Fuga, deleniti tempora!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium voluptatibus modi a nulla consectetur voluptatum, corrupti repellendus, molestias exercitationem, quo excepturi saepe iure dolore nam ex. Aut, in nulla?</p>
+                </div>
             </section>
             <!--Our Services-->
             <section class="services-section">
@@ -106,10 +117,9 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </section>
             <!--Vision Section-->
             <div class="vision">
-                <img src="images/vision.jpg" alt="our vision">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aperiam odit, eos vitae aliquid recusandae nihil? Nihil perspiciatis, minima modi odit nobis laudantium repudiandae facere esse, dolorum quidem facilis quisquam.</p>
                 <form action="index.html" method="get">
@@ -122,46 +132,56 @@
                 <h2>Our Team</h2>
                 <div class="team-member">
                     <div class="john">
-                        <img src="images/john.jpg" alt="John Doe">
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-owner</h4>
-                        <hr>
-                        <!--horizontal ruler for visual line on page ad to seperate content-->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ut, earum aspernatur vero reprehenderit dignissimos cupiditate magnam ex eius praesentium debitis expedita numquam nemo nam libero quia hic modi neque!</p>
+                        <div class="john-img">
+                            <img src="images/john.jpg" alt="John Doe">
+                        </div>
+                        <div class="john-text">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <hr>
+                            <!--horizontal ruler for visual line on page ad to seperate content-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ut, earum aspernatur vero reprehenderit dignissimos cupiditate magnam ex eius praesentium debitis expedita numquam nemo nam libero quia hic modi neque!</p>
+                        </div>
                     </div>
                     <div class="bob">
-                        <img src="images/bob.jpg" alt="Bob Rite">
-                        <h3>Bob Rite</h3>
-                     <h4>CFO and Co-owner</h4>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat laudantium earum nobis, quis atque. Similique id excepturi dolores, nulla perferendis quasi quia officia iste vel, tempore quibusdam! Pariatur, iusto.</p>
+                        <div class="bob-img">
+                            <img src="images/bob.jpg" alt="Bob Rite">
+                        </div>
+                        <div class="bob-text">        
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat laudantium earum nobis, quis atque. Similique id excepturi dolores, nulla perferendis quasi quia officia iste vel, tempore quibusdam! Pariatur, iusto.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <!--Contact Section-->
-            <section class="contact" id="contact">
-                <h2>Contact Us</h2>
-                <h3>Send us a message</h3>
-                <form action="index.html" method="post" class="contactform">
-                <!--form with post method for sending user data-->
-                    <label for="fullname" class="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="fullname">
+            <section class="contactinfo" id="contact">
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <h3>Send us a message</h3>
+                    <form action="index.html" method="post" class="contactform">
+                    <!--form with post method for sending user data-->
+                        <label for="fullname" class="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname">
 
-                    <label for="email" class="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <!--type=email allows the @ sign in format-->
+                        <label for="email" class="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <!--type=email allows the @ sign in format-->
 
-                    <label for="message" class="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
+                        <label for="message" class="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
 
-                    <button type="submit">Send</button>
-                    <!--submit button sends form data-->
-                </form>
+                        <button type="submit">Send</button>
+                        <!--submit button sends form data-->
+                    </form>
+                </div>
                 <!--Hours Table Section-->
                 <div class="hours">
+                    <h3>Hours of operation</h3>
                     <table>
                         <!--used to display strcuture data into a table format-->
-                        <caption>Hours of operation</caption>
                         <thead>
                         <!--table header section-->
                             <tr>
