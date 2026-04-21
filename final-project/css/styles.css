@@ -708,6 +708,10 @@ footer a{
         font-size: 13px;
     }
 
+    footer{
+        margin-left: 0;
+    }
+
     /* make footer font smaller */
     footer p{
         font-size: 13px;
